@@ -1,0 +1,171 @@
+main{
+    padding: 0% 5%;
+    background-image: url('../image/background4.webp');
+    background-size:cover;
+    
+}
+.header--name{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color:aliceblue;
+    align-items: center;
+    padding-left: 5%;
+    font-size: larger;
+    gap: 2%;
+    height: 10%;
+}
+.logo{
+    margin: 5% 1%;
+    border-radius: 40%;
+}
+.header--name :last-child{
+    padding-top: 10%;
+    padding-right: 5%;
+
+}
+.navigation {
+    padding-top:8% ;
+    margin-left: 5%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    
+}
+.button{
+    height:50px;
+    border: none;
+    border-bottom:solid 0.1em;
+    background-color: rgb(157, 104, 83);
+}
+.section1{
+    display: flex;
+    flex: column;
+    height: max-content;
+    background-color: #f2f3f7;
+}
+.paragraph {
+    background-color:white;
+    padding: 5%;
+}
+.figure{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.figure img{
+    width:40%;
+    padding-bottom:5px ;
+}
+.head--slogan{
+    background-color: white;
+    color:black;
+    height: max-content;
+    padding: 5% 0%;
+    font-weight: 3em;
+    font-family: Verdana, serif;
+    text-transform: capitalize;
+
+}
+.head {
+    text-align: center;
+}
+.opnion {
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    column-gap: 4%;
+    margin-bottom: 3%;
+    background-color: white;
+    padding-top: 1%;
+    padding-left: 3%;
+}
+
+.opnion span{
+    background-color: rgb(222, 212, 197);
+    display: block;
+    font-weight: 2em;
+    font-family: italic,arial,sans-serif;
+}
+.footer{
+    background-color: rgb(122, 117, 117);
+    color:cornsilk;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer--section1{
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+}
+.footer img{
+    border-radius: 30%;
+}
+.footer--last{
+    text-align:  center;
+    background-color: rgb(25, 23, 23);
+}
+a{
+    text-decoration: none;
+    color: rgb(234, 224, 241);
+}
+.navigation :hover{
+    background-color: rgb(128, 128, 128);
+    color: aliceblue;
+}
+.menu{
+    display:none;
+}
+
+@media (max-width:500px){
+    .menu{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .header--name{
+        display: flex;
+        font-size: small;
+        width:100%;
+    }
+    .navigation{
+        display: none;
+    }
+    .opnion{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .section1{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .figure{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .figure img{
+        width: 100vp;
+        padding: 0%;
+        margin: 0%;
+        
+    }
+    .opnion div{
+        margin-bottom: 18px; 
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+
+}
+.hor_nav{  
+    justify-content: space-around;
+    background-color: #f2f3f7;
+    color: black;
+    border-top: solid white;
+    align-items:stretch;
+    width: 100%;
+}

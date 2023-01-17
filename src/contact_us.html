@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>contact_us-Mekedonia</title>
+        <link rel="icon" type="image/x-icon" href="../image/favicon.png">
+        <link rel="stylesheet" href="contact_us.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA- Compatible" content="IEedge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__title">
+                <img class="header__img" src="../image/lo.png" alt="">
+                <h1>Mekedonia Humanitarian Association</h1>
+                <img id="menu" class="header__img--menu" style="width: 20px; height: 20px;" src="../image/menu.jpg" alt="" onclick="Navigation_bar()">
+            </div>
+            <nav id="nav" class="header__nav">
+                <button class="header__button"><a class="header__link" href="Home.html">Home</a></button>
+                <button class="header__button"><a class="header__link"href="About_us.html">About_us</a></button>
+                <button class="header__button"><a class="header__link" href="Community.html">Community</a></button>
+                <button class="header__button"><a class="header__link" href="How to Participate.html">How To Participate</a></button>
+                <button class="header__button"><a class="header__link" href="Reservation Form.html">Reserve a Day</a></button>
+                <button class="header__button header__button--current"><a class="header__link--current" href="contact_us.html">Contact Us</a></button>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="main__div1">
+                <iframe class="main__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4721754979887
+                !2d38.889970243139565!3d9.020618513285763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                1s0x164b90a6414b7baf%3A0x24d9705a3c6124fc!2sThe%20Macedonians%20Humanitarian%20Association%20
+                (MHA)!5e0!3m2!1sen!2set!4v1672104039329!5m2!1sen!2set"
+                frameborder="0" allowfullscreen="" >map for mekedonia</iframe> 
+            </div>
+            <section class="main__information">
+                
+                <div class="main__message">
+                    <p class="paragraph">Mekedonia help peoples that couldn't help them selves. If you have any information you want to give us, 
+                        opnions you think that will help the Association.use the public opinion box and send us your message.  
+                        If you get a person to be helped by Mekedonia put what kind of problems the person have and the exact address. it is preferable 
+                        It will be best if you could put phone number that we will contact to fasten the process.
+                    </p>
+                    <label class="main__lable" for="text">public opnion box</label><br><textarea id="text" name="comment" cols="30" rows="10"></textarea>
+                    <br>
+                    <button class="main__message--button" type="submit" onclick="sendMessage()">Send</button><br><span class="main__span" id="send"></span>
+                </div>
+                <div class="main__address">
+                    <div>
+                        <img src="../image/location.png" alt="Location icon"> Location
+                        <ul>
+                            <li>Ayat Condominiums, Addis Ababa</li>
+                        </ul>
+                    </div>
+                    <div class="direct">
+                        <h4>To see Branches address and telephone</h4>
+                        <button class="main__address--button" ><a href="About_us.html#branches">Click here</a></button>
+                    </div>
+                    <div>
+                        <img src="../image/telepone.png" alt="Phone number"> Phone number
+                        <ul>
+                            <li>09 40 40 40 40</li>
+                            <li>09 70 70 70 70</li>
+                            <li>09 79 79 79 79</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>social media account</p>
+                        <ul class="main__address--list">
+                            <li ><img src="../image/facebook.png" alt="facebook" ><a class="main__address--link" href="https://www.facebook.com/mekedoniahomes/">Facebook</a> </li>
+                            <li ><img src="../image/telegram.png" alt="Telegram" ><a class="main__address--link" href="https://t.me/Mekedonia7979">Telegram</a> </li>
+                            <li ><img id="youtube" src="../image/youtube.png" alt="YouTube" ><a href="https://www.youtube.com/results?search_query=%40Mekedonia-8161">Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__para">Addis Ababa,Ethiopia <br>
+                <img src="../image/copyright.png" alt="copyright icon"> copyright 2022
+            </p> 
+        </footer> 
+        <script src="./home.js"></script>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reservation-Mekedonia</title>
+        <link rel="stylesheet" href="./Reservation Form.css">
+        <link rel="icon" type="image/x-icon" href="../image/favicon.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA- Compatible" content="IEedge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__title">
+                <img  class="header__img--logo" src="../image/lo.png" alt="">
+                <h1>Mekedonia Humanitarian Association</h1>
+                <img class="header__img--menu" id="menu" style="width: 20px; height: 20px;" src="../image/menu.jpg" alt="" onclick="Navigation_bar()">
+            </div>
+            
+            <nav id="nav" class="header__nav" >
+                <button class="header__button"><a class="header__link" href="Home.html">Home</a></button>
+                <button class="header__button"><a class="header__link" href="About_us.html">About_us</a></button>
+                <button class="header__button"><a class="header__link"  href="Community.html">Community</a></button>
+                <button class="header__button"><a class="header__link" href="How to Participate.html">How To Participate</a></button>
+                <button class="header__button--current"><a class="header__link--current" href="Reservation Form.html">Reserve a Day</a></button>
+                <button class="header__button"><a class="header__link" href="contact_us.html">Contact Us</a></button>
+            </nav>
+        </header>
+        <main class="main">
+            <section>
+                <h2 class="headLine main__head">Reservation Form</h2>
+                <p>This form is prepared to help person's to have a pre-scheduled program. When you think you want to come to mekedonya in 
+                    group it is preferable to fill the form below. it will help us to prepare tasks you can help us.
+                    For programs you want to celebrate with us, 
+                    use the form below and we will contact you by your email or phone number.
+                </p>
+                <div class="main__formPage">
+                    <h2 class="headLine main__formPage--head">Fill the form below</h2>
+                    
+                    <br>
+                    <form class="main__form" action="#message">
+                        <div class="main__lableArea">
+                            <label class="main__lable" for="name">Name</label><br>
+                            <label class="main__lable" for="p_number"> Phone Number</label><br>
+                            <label class="main__lable" for="email">Email</label><br>
+                            <label class="main__lable" for="date" >Program Date</label><br>
+                            <label class="main__lable" for="money">Amount of Money</label><br>
+                            <label class="main__lable" for="rad" >Type of program <br>
+                                
+                        </div>
+                        <div class="input-area">
+                            <input class="main__input--input" placeholder="Enter your name" type="text" id="name" onkeyup="validateName()">
+                            <span id="name_error"></span><br>
+                            <input class="main__input--input" placeholder="Enter your phone number " type="" id="p_number"
+                            onkeyup="validatePhoneNumber()">
+                            <span id="phone_error"></span><br>
+                            <input class="main__input--input" placeholder="Enter Email"  type="text" id="email" onkeyup="validateEmail()">
+                            <span id="email_error" ></span><br>
+                            <input class="main__input--input" type="date" id="date" onkeyup="validateDate()">
+                            <span  id="date_error"></span><br>
+                            <input class="main__input--input" placeholder="Amount of money in Birr" type="integer" id="money" onkeyup="validateMoney()">
+                            <span id="money_error"></span><br>
+                            <select class="main__input--input" id="rad" onclick="programType()">
+                                <option value=""></option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Birth Day">Birth Day</option>
+                                <option value="Sedeka">Sedeka</option>
+                                <option value="Memorial">Memorial</option>
+                                <option value="Special">Special Day</option>
+                                <option value="other">other</option>
+                            </select>
+                            <span id="error"></span><br>
+                            <button id="button--submit" onclick="validateSubmission()">Reserve the Day</button>
+                        </div>
+                    </form>
+                    <span class="span" id="message"></span>
+                    <span class="span" id="message2"></span>
+                </div> 
+            </section>
+            <p class="last">Thank you for the time you want to spend with us. you will have a memorable day</p>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer__address">
+                <ul>
+                    <img src="../image/location.png" alt="Location icon">Location
+                    <li>Ayat Condominiums, Addis Ababa</li>
+                </ul>
+                <ul>
+                    <img width="30px" height="30px" src="../image/telepone.png" alt="Phone number">Phone Number
+                    <li>09 39 39 39 39</li>
+                    <li>09 40 40 40 40</li>
+                </ul>
+                <ul>Social media account
+                    <li><img src="../image/facebook.png" alt="facebook" ><a href="https://www.facebook.com/mekedoniahomes/">Facebook</a> </li>
+                    <li><img src="../image/telegram.png" alt="Telegram" ><a href="https://t.me/Mekedonia7979">Telegram</a> </li>
+                </ul>
+            </div>
+            <p class="footer__last">Addis Ababa,Ethiopia <br>
+                <img src="../image/copyright.png" alt="copyright icon" height="25px" width="25px"> copyright 2022
+            </p>  
+        </footer>
+
+        <script src="home.js"></script>
+
+
+    </body>
+
+</html>
